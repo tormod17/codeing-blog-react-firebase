@@ -1,0 +1,117 @@
+.posts {
+  background: coral;
+}
+.pageWrapper {
+  margin: 0 5em;
+}
+.Form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  .form-wrapper {
+    overflow: scroll;
+    height: 58vh;
+    width: 100%;
+    form {
+      margin: 2em;
+    }
+  }
+}
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.closeButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  color: grey;
+}
+
+.centerPage {
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  margin: auto;
+  min-height: 40vh;
+  max-height: 80vh;
+  border-radius: 0.5%;
+  transition: all 1s ease;
+}
+
+.buttonPair {
+  text-align: right;
+  button {
+    margin: 0.5em;
+  }
+}
+
+.formTrans-appear {
+  opacity: 0.01;
+  transform: scale(0.5);
+}
+
+.formTrans-appear.formTrans-appear-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+  transform: scale(1);
+  transition: all 500ms ease;
+}
+
+
+.formTrans-enter.formTrans-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  transform: scale(1);
+  transition: all 500ms ease;
+}
+
+.formTrans-leave {
+  opacity: 1;
+  transform: scale(0.5);
+  transition: all 500ms ease;
+}
+
+.formTrans-leave.formTrans-leave-active {
+  opacity: 0.5;
+  transition: opacity 300ms ease-in;
+}
+
+.listTrans-enter {
+  opacity: 0.01;
+  transform: scale(0.5);
+}
+
+.listTrans-enter.listTrans-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  transform: scale(1);
+  transition: all 500ms ease;
+}
+
+.listTrans-leave {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 500ms ease;
+
+}
+
+.listTrans-leave.listTrans-leave-active {
+  opacity: 0.01;
+  transform: scale(0.5);
+  transition: all 500ms ease;
+}
+
