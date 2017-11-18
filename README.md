@@ -1,4 +1,4 @@
 
 Coding blog react firebase app.
 
-[https://tapatool-55396.firebaseapp.com/](link to firebase host)
+[firebase link](https://tapatool-55396.firebaseapp.com)
