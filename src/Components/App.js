@@ -49,12 +49,12 @@ class App extends Component {
       <div className="App pageWrapper">
         <Header />
         <div className="row">
-          <div className="col-sm-10 center">
+          <div className="col-xs-6 col-sm-10 center">
             <div className="">
               <h3>Posts</h3>
             </div>
           </div>
-          <div className="col-sm-2 sideWrapper">
+          <div className="col-xs-6 col-sm-2 sideWrapper">
             <div className="info aside section">
               <button 
                 type="button"
