@@ -21,6 +21,9 @@
     overflow: scroll;
     height: 58vh;
     width: 100%;
+    @include defaultMobileLarge {
+      height: 70vh;
+    }
     form {
       margin: 2em;
     }
@@ -57,6 +60,10 @@
   max-height: 80vh;
   border-radius: 0.5%;
   transition: all 1s ease;
+  @include defaultMobileLarge {
+    min-height: 100%;
+    max-height: 100%;
+  }
 }
 
 .buttonPair {

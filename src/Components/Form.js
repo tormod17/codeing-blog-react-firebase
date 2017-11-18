@@ -25,7 +25,7 @@ class Form extends Component {
     document.querySelector('html').style.overflow = 'hidden';
   }
 
-  componetWillUnmount(){
+  componentWillUnmount(){
     document.querySelector('html').style.overflow = 'scroll';
   }
 
