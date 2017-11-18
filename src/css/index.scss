@@ -4,7 +4,10 @@
   }
 }
 .pageWrapper {
-  margin: 0 5em;
+  margin: 0 3em;
+  @include defaultMobileLarge {
+    margin: 0 1em;
+  }
 }
 .Form {
   position: fixed;
