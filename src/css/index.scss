@@ -1,8 +1,15 @@
-.posts {
-  background: coral;
+@import './vars.scss';
+
+.Posts {
+  img {
+    width: 30%;
+  }
 }
 .pageWrapper {
-  margin: 0 5em;
+  margin: 0 3em;
+  @include defaultMobileLarge {
+    margin: 0 1em;
+  }
 }
 .Form {
   position: fixed;
@@ -115,3 +122,11 @@
   transition: all 500ms ease;
 }
 
+.Menu {
+  a {
+    text-decoration: none;    
+  }
+  span {
+    display: block;
+  }
+}

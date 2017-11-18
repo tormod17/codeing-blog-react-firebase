@@ -49,8 +49,6 @@ class EditForm extends PureComponent {
       }
       return p;
     }, {})
-
-    console.log(cleanState);
     const dbRef = firebase.database().ref('meBlog/'+ id).set(cleanState)
     closeForm();
   }
@@ -76,7 +74,7 @@ class EditForm extends PureComponent {
               <textarea
                 name={key} 
                 className="form-control"
-                rows="5"
+                rows="3"
                 id="text"
                 onChange={this.updateFieldValue}
                 value={post[key]}

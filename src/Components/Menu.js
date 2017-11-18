@@ -20,8 +20,8 @@ class Menu extends Component {
                     className="list-group-item"
                   >
                     <a href={`#${key}`}>
-                      <span>{posts[key].title}</span>
-                      <span>{posts[key].today}</span>
+                      <span>{posts[key].title} </span>
+                      <span>{posts[key].today} </span>
                     </a>
                   </li>
                 );                

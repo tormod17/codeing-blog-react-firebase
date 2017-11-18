@@ -40,7 +40,7 @@ class AddForm extends Component {
           <textarea
             name={`${key.replace('key',field)}`} 
             className="form-control"
-            rows="5"
+            rows="3"
             id="text"
             onChange={this.updateFieldValue}
           >
@@ -52,17 +52,6 @@ class AddForm extends Component {
     return (
       <div key={key}>
         {fields}
-        <div className="form-group">        
-          <div>
-            <button 
-              type="button"
-              className="btn btn-success btn-xs"
-              onClick={this.addMoreInput}
-            >
-              Add More
-            </button>
-          </div>
-        </div>
       </div>
     );
   }
@@ -118,7 +107,14 @@ class AddForm extends Component {
           </div>
           {list}
           <div className="form-group">        
-            <div>
+            <div className="buttonPair">
+              <button 
+                type="button"
+                className="btn btn-success btn-xs"
+                onClick={this.addMoreInput}
+              >
+                Add More
+              </button>
               <button 
                   type="submit"
                   className="btn btn-primary btn-small"
