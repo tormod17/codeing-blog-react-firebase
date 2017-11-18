@@ -7,7 +7,7 @@ class Header extends Component {
       <div className="Header">
         <div className="">
           <div className="page-header">
-            <h1>Codeing Blog</h1>      
+            <h1>Coding Blog</h1>      
           </div>   
           <p>This blog aims to be a source of information retention for the hard headed, created with React & Firebase.</p>
         </div>

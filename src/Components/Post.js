@@ -53,10 +53,10 @@ class Post extends Component {
           content = this.formatList(item[key]);
           break;
         case key.includes('Image'):
-          content = item[key] && <img src={item[key]} className="img-rounded thumbnail" width="300"/>
+          content = item[key] && <img src={item[key]} className="img-rounded thumbnail" />
           break;
         case key.includes('iframe'):
-          content = item[key] && <iframe src={item[key]} className="iframe" width="500"/>      
+          content = item[key] && <iframe src={item[key]} className="iframe" />      
           break;
         case key.includes('subTitle'):
           content = <h5>{`${item[key].toUpperCase()}`}</h5> 

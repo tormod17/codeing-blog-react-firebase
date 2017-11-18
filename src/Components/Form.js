@@ -22,6 +22,11 @@ class Form extends Component {
         ...editingPost,
       })
     }
+    document.querySelector('html').style.overflow = 'hidden';
+  }
+
+  componetWillUnmount(){
+    document.querySelector('html').style.overflow = 'scroll';
   }
 
   render() {

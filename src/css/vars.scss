@@ -1,0 +1,80 @@
+@mixin mediaQuery($min, $max, $height) {
+  @if $min != "" and $max != "" and $height != "" {
+    @media(min-width: #{$min}) and (max-width: #{$max}), all and (max-height: #{$height}) {
+      @content;
+    }
+  } @else if  $min != "" and $max != "" and $height == "" {
+    @media(min-width: #{$min}) and (max-width: #{$max}) {
+      @content;
+      }
+  } @else if $min == "" and $height == ""{
+    @media(max-width: #{$max}) {
+      @content;
+      }
+  } @else if $max == "" and $height == "" {
+    @media(min-width: #{$min}) {
+      @content;
+      }
+  }
+}
+
+
+@mixin defaultLaptop {
+  @media all and (max-width: 1000px), all and (max-height: 600px) {
+    @content
+  }
+}
+
+@mixin defaultIframe {
+  @media all and (max-width: 917px), all and (max-height: 600px) {
+    @content
+  }
+}
+
+@mixin defaultTablet {
+  @media all and (max-width: 780px), all and (max-height: 468px) {
+    @content
+  }
+}
+
+@mixin defaultMobileXL {
+  @media all and (max-width: 630px), all and (max-height: 450px) {
+    @content
+  }
+}
+
+@mixin defaultMobileLarge {
+  @media all and (max-width: 570px), all and (max-height: 350px) {
+    @content
+  }
+}
+
+@mixin defaultMobile {
+  @media all and (max-width: 480px), all and (max-height: 288px) {
+    @content
+  }
+}
+
+@mixin defaultMobileMid {
+  @media all and (max-width: 430px), all and (max-height: 288px) {
+    @content
+  }
+}
+
+@mixin defaultMobileSmall {
+  @media all and (max-width: 320px), all and (max-height: 288px) {
+    @content
+  }
+}
+
+@mixin defaultMobileMini {
+  @media all and (max-width: 320px), all and (max-height: 270px) {
+    @content
+  }
+}
+/// Portrait Media query
+@mixin defaultMobilePortrait {
+  @media all and (min-width:320px) and (max-width: 570px) and (orientation:portrait) {
+    @content
+  }
+}
